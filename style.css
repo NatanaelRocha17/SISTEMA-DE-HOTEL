@@ -1,0 +1,203 @@
+#acesso{
+    width: 45%;
+    height: 150px;
+    text-align: center;
+    position: relative;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    margin-top: 200px;
+}
+#acesso h2{
+   color: rgb(255, 255, 255);
+   font-size: 25pt;
+}
+#acesso2{
+    border: solid #08961b 4px;
+    border-radius: 20px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 135px;
+    text-align: center;
+}
+#acesso2 a{
+    color: rgb(255, 255, 255);
+    font-size: 15pt;
+    text-decoration: none;
+}
+#acesso2 input{
+    background-color: rgb(255, 255, 255);
+    cursor:pointer;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+#acesso2 input:focus{
+    border: solid 3px green;
+}
+#preVisu{
+   /*display: none;*/
+
+}
+#entrar{
+    border: 2px solid green;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 25%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.9s;
+    
+}
+#entrar p{
+    margin: 0px;
+    font-size: 100%;
+}
+#sair a{
+    margin: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#sair{
+    width: 50px;
+    border: 4px solid red;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+ 
+}
+#sair:hover{
+    background-color: rgb(255, 0, 0);
+
+}
+#sair a:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255); 
+}
+
+#entar p{
+    margin: 0px;
+}
+#entrar:hover{
+    background-color: green;
+    color: rgb(255, 255, 255);
+}
+body{
+    background-image: linear-gradient(to right, rgb(255, 72, 0), rgb(236, 223, 30));
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: rgb(8, 106, 235);
+    text-align: center;
+    font-size: 35pt;
+    margin: 0px;
+}
+#pag2{
+    display: flex;
+    justify-content: center;
+}
+#caixa1{
+    margin: 0px 100px;
+    width: 85%;
+    text-align: center;
+    font-size: 15pt;
+    border: solid 4px rgb(17, 80, 197);
+    border-radius: 20px;
+}
+#consultar{
+    margin:10px 50px 10px 100px;
+    width: 30%;
+    text-align: center;
+    font-size: 15pt;
+    border: solid 4px rgb(17, 80, 197);
+    border-radius: 20px;
+    display: block;
+
+}
+h4{
+    margin: 0px;
+}
+#resp{
+    font-size: 20pt;
+}
+#liberar{
+    margin-right:50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    text-align: center;
+    font-size: 15pt;
+    border: solid 4px rgb(17, 80, 197);
+    border-radius: 20px;
+    height: 200px;
+}
+#res2{
+    text-align: left;
+    padding-left: 10px;
+    
+}
+.estilo{
+    border-radius: 20px;
+    border: solid 4px rgba(8, 150, 62, 0.925);
+    outline: 0;
+}
+#gastos{
+    margin-right:100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+    text-align: center;
+    font-size: 15pt;
+    border: solid 4px rgb(17, 80, 197);
+    border-radius: 20px;
+    height: 200px;
+}
+.tam{
+    width: 150px;
+    border-radius: 20px;
+    border: solid 4px rgba(8, 150, 62, 0.925);
+}
+#lados{
+    display: flex;
+}
+#lado1{
+    width: 50%;
+    padding-left: 10px;
+    text-align: left;
+   
+    
+}
+#lado2{
+    width: 50%;
+    padding-right: 10px;
+    text-align: right;
+}
+.botao {
+    background-color: #209153; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: green;
+}
+input, textarea, select {
+    outline: 0;
+}
+#botao{
+    width: 25%;
+    margin: auto;
+    margin-top: 4% ;
+    border: blue solid 4px;
+    cursor: pointer;
+    text-align: center;
+}

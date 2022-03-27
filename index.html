@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sair">
+        <a href="login.html">SAIR</a>
+    </div>
+    <h1>Gerenciamento de hospedagem do Hotel Brito</h1>
+    <div id="caixa1">
+        <h3>Adicionar hóspedes</h3>
+        <p>Nome: <input type="text" name="nome" class="estilo" id="nome">
+        Data de Nascimento: <input type="date" class="estilo" name="nasc" id="nasc"></p>
+        <p>CPF: <input type="text" class="estilo" name="cpf" id="cpf" maxlength="14" autocomplete="off" placeholder="000.000.000-00" onkeyup="mascaraCpf()">
+        Data de Entrada: <input type="date" class="estilo" name="entrada" id="entrada">         Data de Saída <input type="date" name="saida" class="estilo" id="saida"></p>
+
+        <!--<h4>Quartos Disponíveis</h4>-->
+        <input type="button" value="Quartos Disponiveis"  class="botao" onclick="disponivel()">
+        <div id="resp">
+
+        </div>
+       
+        <br>
+        Selecione o quarto
+        <select name="quart" id="quart" class="estilo">
+            <option value="0" class="estilo"> Quarto 1</option>
+            <option value="1" class="estilo"> Quarto 2</option>
+            <option value="2"> Quarto 3</option>
+            <option value="3"> Quarto 4</option>
+            <option value="4"> Quarto 5</option>
+            <option value="5"> Quarto 6</option>
+            <option value="6"> Quarto 7</option>
+            <option value="7"> Quarto 8</option>
+            <option value="8"> Quarto 9</option>
+            <option value="9"> Quarto 10</option>
+        </select>
+        <br> <br>
+        
+        <p><input type="button" value="HOSPEDAR" class="botao" onclick="hospedar()"></p>
+        
+    </div>
+    <section id="pag2">
+        <div id="consultar">
+            <h3>Consultar hóspedes</h3>
+            <p>Nome do hóspede: <input type="text" name="nome2" id="nome2" class="estilo"> <br>
+             <br> <input type="button" class="botao"  value="Imprimir" onclick="imprimir()"></p>
+            <input type="button" class="botao"  value="Informação de todos os hóspedes" onclick="Todos()">
+            
+            <div id="res2">
+    
+            </div>
+            <section id="lados">
+                <div id="lado1">
+
+                </div>
+                <div id="lado2">
+    
+                </div>
+            </section>
+        </div>
+        <div id="liberar">
+            <h3>Liberar Quarto</h3>
+            <p>Nome do hóspede:<input type="text" name="nome3" id="nome3" class="estilo"> </p>
+                
+            <input type="button" value="Liberar" onclick="Liberar()" class="botao" >
+        </div>
+        <div id="gastos">
+            <h3>Adicionar Gastos</h3>
+            <p>Nome do hóspede: <input type="text"  class="tam" name="nome4" id="nome4"> 
+                Nome do produto: <input type="text" class="tam" name="prod" class="estilo" id="prod">
+                Valor do produto: <input type="number" class="tam"name="valorProd" id="valorProd">
+            </p>
+                
+            <input type="button" value="Adicionar Gastos" onclick="addGastos()" class="botao" >
+        </div>
+    </section>
+</body>
+</html>

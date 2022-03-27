@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GERENCIMENTO DE HOSPEDAGEM HB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="acesso">
+        <h2>GERENCIMENTO DO HOTEL BRITO</h2>
+        <div id="acesso2">
+            <p>Login: <input type="text" name="usuario" id="usuario"></p>
+            <p>Senha: <input type="password" name="senha" id="senha"></p>
+            <div id="entrar">
+               <p id="link">ENTRAR</p>
+            </div>
+           
+        </div>
+    </div>
+    <script>
+        var palavra = ""
+        var link = document.querySelector("#link")
+        var entrar = document.querySelector("#entrar")
+        entrar.addEventListener("click", function(){
+            var usuario = document.querySelector("#usuario").value
+            var senha = document.querySelector("#senha").value
+            if(senha == "hotelbrito" && usuario == "hotelbrito"){
+                console.log("entoru")
+                link.remove()
+                
+                var a = document.createElement("a")
+                a.href = "index.html"
+                a.textContent = "ENTRAR"
+                entrar.appendChild(a)
+               
+            }else{
+                window.alert("Nome de usuário ou senha INCORRETOS!")
+            }
+        })
+      
+    </script>
+</body>
+</html>
